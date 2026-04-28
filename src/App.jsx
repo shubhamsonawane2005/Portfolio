@@ -8,6 +8,8 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import './index.css'
 
+import { skillCategories } from './data/skills'
+
 function App() {
   useEffect(() => {
     const observerCallback = (entries) => {
@@ -40,8 +42,30 @@ function App() {
       <div className="bento-wrapper">
         <main className="bento-grid">
           <Hero />
+          
           <About />
-          <Skills />
+          
+          <Skills 
+            title="Frontend" 
+            skills={skillCategories[0].skills} 
+            className="col-span-1 row-span-1"
+            delay="0.2s"
+          />
+          
+          <Skills 
+            title="Backend" 
+            skills={skillCategories[1].skills} 
+            className="col-span-1 row-span-1"
+            delay="0.3s"
+          />
+          
+          <Skills 
+            title="Database & Tools" 
+            skills={skillCategories[2].skills} 
+            className="col-span-2 row-span-1"
+            delay="0.4s"
+          />
+
           <Projects />
           <Contact />
         </main>

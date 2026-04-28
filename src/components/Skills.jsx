@@ -1,60 +1,23 @@
 import React from 'react';
 
-const Skills = () => {
-  const skillCategories = [
-    {
-      title: 'Frontend',
-      skills: [
-        { name: 'React', level: 75 },
-        { name: 'JavaScript (ES6+)', level: 80 },
-        { name: 'HTML5/CSS3', level: 95 },
-        { name: 'Tailwind CSS', level: 90 },
-      ]
-    },
-    {
-      title: 'Backend',
-      skills: [
-        { name: 'Node.js', level: 85 },
-        { name: 'Express', level: 80 },
-        { name: 'RESTful APIs', level: 90 },
-      ]
-    },
-    {
-      title: 'Database & Tools',
-      skills: [
-        { name: 'MongoDB', level: 95 },
-        { name: 'PostgreSQL', level: 75 },
-        { name: 'Git & GitHub', level: 90 },
-        { name: 'Docker', level: 70 },
-      ]
-    }
-  ];
-
+const Skills = ({ title, skills, className, delay = '0.2s' }) => {
   return (
-    <div id="skills" className="bento-item col-span-2 row-span-1 reveal" style={{ transitionDelay: '0.2s' }}>
-      <h2 className="section-title">My Skills</h2>
+    <div className={`bento-item ${className} reveal`} style={{ transitionDelay: delay }}>
+      <h3 className="skill-box-title text-gradient">{title}</h3>
 
       <div className="skills-content">
-        <div className="skills-grid">
-          {skillCategories.map((category, index) => (
-            <div key={index} className="skill-category">
-              <h3 className="category-title text-gradient">{category.title}</h3>
-
-              <div className="skills-list">
-                {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="skill-item">
-                    <div className="skill-info">
-                      <span className="skill-name">{skill.name}</span>
-                      <span className="skill-percentage">{skill.level}%</span>
-                    </div>
-                    <div className="skill-bar-bg">
-                      <div
-                        className="skill-bar-fill"
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
-                  </div>
-                ))}
+        <div className="skills-list">
+          {skills.map((skill, index) => (
+            <div key={index} className="skill-item">
+              <div className="skill-info">
+                <span className="skill-name">{skill.name}</span>
+                <span className="skill-percentage">{skill.level}%</span>
+              </div>
+              <div className="skill-bar-bg">
+                <div
+                  className="skill-bar-fill"
+                  style={{ width: `${skill.level}%` }}
+                ></div>
               </div>
             </div>
           ))}
@@ -62,31 +25,22 @@ const Skills = () => {
       </div>
 
       <style>{`
+        .skill-box-title {
+          margin-bottom: 1.5rem;
+          font-size: 1.25rem;
+          font-weight: 700;
+        }
+
         .skills-content {
           height: 100%;
           display: flex;
           flex-direction: column;
           overflow-y: auto;
-          padding-right: 1rem;
-        }
-
-        .skills-grid {
-          display: flex;
-          flex-direction: column;
-          gap: 2rem;
-        }
-
-        .skill-category {
-          margin-bottom: 1rem;
-        }
-
-        .category-title {
-          margin-bottom: 1.5rem;
-          font-size: 1.25rem;
+          padding-right: 0.5rem;
         }
 
         .skill-item {
-          margin-bottom: 1.5rem;
+          margin-bottom: 1.25rem;
         }
 
         .skill-item:last-child {
@@ -96,8 +50,9 @@ const Skills = () => {
         .skill-info {
           display: flex;
           justify-content: space-between;
-          margin-bottom: 0.5rem;
+          margin-bottom: 0.4rem;
           font-weight: 500;
+          font-size: 0.9rem;
         }
 
         .skill-percentage {
@@ -106,7 +61,7 @@ const Skills = () => {
 
         .skill-bar-bg {
           width: 100%;
-          height: 8px;
+          height: 6px;
           background: var(--bg-primary);
           border-radius: var(--border-radius-full);
           overflow: hidden;
@@ -133,6 +88,18 @@ const Skills = () => {
         @keyframes shimmer {
           0% { transform: translateX(-100%); }
           100% { transform: translateX(100%); }
+        }
+
+        /* Custom scrollbar for skills list */
+        .skills-content::-webkit-scrollbar {
+          width: 4px;
+        }
+        .skills-content::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        .skills-content::-webkit-scrollbar-thumb {
+          background: var(--border-color);
+          border-radius: 10px;
         }
       `}</style>
     </div>
