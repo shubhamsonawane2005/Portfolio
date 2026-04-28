@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
 import { FaTimes as CloseIcon } from 'react-icons/fa';
 
 const CaseStudy = ({ projectId, onClose }) => {
@@ -8,7 +8,7 @@ const CaseStudy = ({ projectId, onClose }) => {
       subtitle: 'Carpooling Web Application',
       techStack: ['React', 'Node.js', 'Express.js', 'MongoDB'],
       duration: '3 months',
-      image: '/dd.png',
+      image: '/Portfolio/dd.png',
       sections: [
         {
           heading: 'Problem Statement',
@@ -79,7 +79,7 @@ const CaseStudy = ({ projectId, onClose }) => {
       subtitle: 'Ride Booking Platform with Movie Theater UX',
       techStack: ['Angular', 'CSS', 'Express.js', 'Node.js', 'MongoDB'],
       duration: '2.5 months',
-      image: '/cc.png',
+      image: '/Portfolio/cc.png',
       sections: [
         {
           heading: 'Problem Statement',
@@ -151,7 +151,7 @@ const CaseStudy = ({ projectId, onClose }) => {
       subtitle: 'Premium E-commerce Inspired Ride Booking',
       techStack: ['PHP', 'CSS', 'JavaScript', 'MySQL'],
       duration: '2 months',
-      image: '/apple.jpg',
+      image: '/Portfolio/apple.jpg',
       sections: [
         {
           heading: 'Problem Statement',
