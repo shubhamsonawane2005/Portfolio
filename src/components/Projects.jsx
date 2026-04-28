@@ -8,7 +8,7 @@ const Projects = () => {
     {
       title: 'Daily Drive',
       description: 'I built a carpooling web application using the MERN Stack that connects drivers and passengers for shared rides.Users can create, search, and book rides with secure authentication and real- time availability.The platform helps reduce travel costs and traffic while showcasing full - stack development with React, Node.js, and MongoDB.',
-      image: '/dd.png',
+      image: '/Portfolio/dd.png',
       techStack: ['React', 'Node.js', 'Express.js', 'MongoDB'],
       liveLink: 'https://example.com',
       githubLink: 'https://github.com/shubhamsonawane2005/Daily-Drive',
@@ -17,7 +17,7 @@ const Projects = () => {
     {
       title: 'Cinex',
       description: 'I built a carpooling web application, similar to Cinex, using the MEAN Stack.Users can browse available rides, select seats, and book trips just like reserving seats in a movie booking system.The platform offers a smooth, real- time booking experience while demonstrating full - stack development with Angular, CSS, Express.js, Node.js, MongoDB.',
-      image: '/cc.png',
+      image: '/Portfolio/cc.png',
       techStack: ['Angular', 'CSS', 'Express.js', 'Node.js', 'MongoDB'],
       liveLink: 'https://example.com',
       githubLink: 'https://github.com/shubhamsonawane2005/cinex',
@@ -26,7 +26,7 @@ const Projects = () => {
     {
       title: 'Apple-store',
       description: 'I built a carpooling web application, inspired by the seamless experience of the Apple Store, using the MERN Stack.Users can easily explore available rides, view details, and book seats through a clean and intuitive interface.The platform delivers a smooth, premium user experience while showcasing full- stack development with PHP, CSS, JavaScript, MySQL',
-      image: '/apple.jpg',
+      image: '/Portfolio/apple.jpg',
       techStack: ['PHP', 'CSS', 'JavaScript', 'MySQL'],
       liveLink: 'https://example.com',
       githubLink: 'https://github.com/shubhamsonawane2005/Apple-Website',
