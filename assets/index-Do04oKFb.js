@@ -341,75 +341,205 @@ Error generating stack: `+e.message+`
             margin-bottom: 1rem;
           }
         }
-      `})]}),ve=()=>(0,k.jsxs)(`div`,{id:`about`,className:`bento-item col-span-2 row-span-1 reveal`,style:{transitionDelay:`0.1s`},children:[(0,k.jsx)(`h2`,{className:`section-title`,children:`About Me`}),(0,k.jsx)(`div`,{className:`about-content`,children:(0,k.jsxs)(`div`,{className:`about-text`,children:[(0,k.jsx)(`p`,{children:`Hello! I'm a Full Stack Developer focused on building modern, responsive, and user-friendly web applications using the MERN stack.`}),(0,k.jsx)(`p`,{children:`I enjoy turning ideas into real-world projects and solving problems through clean and efficient code. I have experience working with technologies like React, Node.js, Express, MongoDB, and Tailwind CSS.`}),(0,k.jsx)(`p`,{children:`I'm constantly learning new skills and improving my development process to build better and faster applications. My goal is to create impactful digital experiences and grow as a professional developer.`}),(0,k.jsxs)(`div`,{className:`stats-grid`,children:[(0,k.jsxs)(`div`,{className:`stat-item`,children:[(0,k.jsx)(`h4`,{className:`stat-number text-gradient`,children:`5`}),(0,k.jsx)(`p`,{className:`stat-label`,children:`Projects`})]}),(0,k.jsxs)(`div`,{className:`stat-item`,children:[(0,k.jsx)(`h4`,{className:`stat-number text-gradient`,children:`5 Months`}),(0,k.jsx)(`p`,{className:`stat-label`,children:`INTERNSHIP EXPERIENCE`})]}),(0,k.jsxs)(`div`,{className:`stat-item`,children:[(0,k.jsx)(`h4`,{className:`stat-number text-gradient`,children:`100%`}),(0,k.jsx)(`p`,{className:`stat-label`,children:`LEARNING CONSISTENCY`})]})]})]})}),(0,k.jsx)(`style`,{children:`
+      `})]}),ve=()=>(0,k.jsxs)(`div`,{id:`about`,className:`bento-item col-span-2 row-span-2 reveal`,style:{transitionDelay:`0.1s`},children:[(0,k.jsxs)(`div`,{className:`about-header`,children:[(0,k.jsx)(`h2`,{className:`section-title left`,children:`About Me`}),(0,k.jsx)(`div`,{className:`title-line`})]}),(0,k.jsx)(`div`,{className:`about-content`,children:(0,k.jsxs)(`div`,{className:`about-grid`,children:[(0,k.jsxs)(`div`,{className:`about-text`,children:[(0,k.jsx)(`p`,{className:`lead-text`,children:`Transforming complex problems into elegant digital solutions with a focus on performance and user experience.`}),(0,k.jsx)(`p`,{children:`I am a passionate Full Stack Developer specializing in the MERN & MEAN stacks. My journey in development is driven by a deep curiosity for how things work and a commitment to building applications that make a difference.`}),(0,k.jsxs)(`div`,{className:`stats-grid`,children:[(0,k.jsxs)(`div`,{className:`stat-item`,children:[(0,k.jsx)(`h4`,{className:`stat-number text-gradient`,children:`3+`}),(0,k.jsx)(`p`,{className:`stat-label`,children:`Projects`})]}),(0,k.jsxs)(`div`,{className:`stat-item`,children:[(0,k.jsx)(`h4`,{className:`stat-number text-gradient`,children:`5 Mon`}),(0,k.jsx)(`p`,{className:`stat-label`,children:`Internship`})]}),(0,k.jsxs)(`div`,{className:`stat-item`,children:[(0,k.jsx)(`h4`,{className:`stat-number text-gradient`,children:`100%`}),(0,k.jsx)(`p`,{className:`stat-label`,children:`Dedication`})]})]})]}),(0,k.jsx)(`div`,{className:`about-visual`,children:(0,k.jsxs)(`div`,{className:`illustration-container`,children:[(0,k.jsx)(`img`,{src:`/Portfolio/about_illustration.png`,alt:`Developer Illustration`,className:`about-image`}),(0,k.jsxs)(`div`,{className:`visual-badge glass`,children:[(0,k.jsx)(`span`,{className:`badge-dot`}),`Available for Projects`]})]})})]})}),(0,k.jsx)(`style`,{children:`
+        .about-header {
+          margin-bottom: 2.5rem;
+        }
+
+        .section-title.left {
+          text-align: left;
+          left: 0;
+          transform: none;
+          margin-bottom: 0.5rem;
+          font-size: 2rem;
+        }
+
+        .section-title.left::after {
+          display: none;
+        }
+
+        .title-line {
+          width: 50px;
+          height: 4px;
+          background: var(--accent-gradient);
+          border-radius: var(--border-radius-full);
+        }
+
         .about-content {
           height: 100%;
           display: flex;
           flex-direction: column;
-          justify-content: flex-start;
+          justify-content: space-between;
+          gap: 2rem;
         }
-        .about-text {
-          padding: 0;
+
+        .about-grid {
+          display: grid;
+          grid-template-columns: 1.2fr 0.8fr;
+          gap: 2.5rem;
+          align-items: center;
+        }
+
+        .lead-text {
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: var(--text-primary) !important;
+          margin-bottom: 1rem !important;
         }
 
         .about-text p {
           color: var(--text-secondary);
-          margin-bottom: 1rem;
-          font-size: 1rem;
+          margin-bottom: 1.5rem;
+          font-size: 0.95rem;
+          line-height: 1.6;
         }
 
         .stats-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 1rem;
-          margin-top: 1.5rem;
           padding-top: 1.5rem;
           border-top: 1px solid var(--border-color);
         }
 
         .stat-item {
-          text-align: center;
+          text-align: left;
         }
 
         .stat-number {
-          font-size: 2rem;
+          font-size: 1.5rem;
           font-weight: 800;
-          margin-bottom: 0.25rem;
+          margin-bottom: 0.2rem;
         }
 
         .stat-label {
           color: var(--text-muted);
           font-weight: 500;
-          font-size: 0.8rem;
+          font-size: 0.7rem;
           text-transform: uppercase;
-          letter-spacing: 1px;
+          letter-spacing: 0.5px;
         }
-      `})]}),ye=()=>(0,k.jsxs)(`div`,{id:`skills`,className:`bento-item col-span-2 row-span-1 reveal`,style:{transitionDelay:`0.2s`},children:[(0,k.jsx)(`h2`,{className:`section-title`,children:`My Skills`}),(0,k.jsx)(`div`,{className:`skills-content`,children:(0,k.jsx)(`div`,{className:`skills-grid`,children:[{title:`Frontend`,skills:[{name:`React`,level:75},{name:`JavaScript (ES6+)`,level:80},{name:`HTML5/CSS3`,level:95},{name:`Tailwind CSS`,level:90}]},{title:`Backend`,skills:[{name:`Node.js`,level:85},{name:`Express`,level:80},{name:`RESTful APIs`,level:90}]},{title:`Database & Tools`,skills:[{name:`MongoDB`,level:95},{name:`PostgreSQL`,level:75},{name:`Git & GitHub`,level:90},{name:`Docker`,level:70}]}].map((e,t)=>(0,k.jsxs)(`div`,{className:`skill-category`,children:[(0,k.jsx)(`h3`,{className:`category-title text-gradient`,children:e.title}),(0,k.jsx)(`div`,{className:`skills-list`,children:e.skills.map((e,t)=>(0,k.jsxs)(`div`,{className:`skill-item`,children:[(0,k.jsxs)(`div`,{className:`skill-info`,children:[(0,k.jsx)(`span`,{className:`skill-name`,children:e.name}),(0,k.jsxs)(`span`,{className:`skill-percentage`,children:[e.level,`%`]})]}),(0,k.jsx)(`div`,{className:`skill-bar-bg`,children:(0,k.jsx)(`div`,{className:`skill-bar-fill`,style:{width:`${e.level}%`}})})]},t))})]},t))})}),(0,k.jsx)(`style`,{children:`
+
+        .about-visual {
+          position: relative;
+          display: flex;
+          justify-content: center;
+        }
+
+        .illustration-container {
+          position: relative;
+          width: 100%;
+          max-width: 240px;
+        }
+
+        .about-image {
+          width: 100%;
+          height: auto;
+          filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.4));
+          animation: float 6s ease-in-out infinite;
+        }
+
+        .visual-badge {
+          position: absolute;
+          bottom: -5px;
+          right: -5px;
+          padding: 0.6rem 1rem;
+          border-radius: var(--border-radius-full);
+          font-size: 0.75rem;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+          white-space: nowrap;
+        }
+
+        .badge-dot {
+          width: 6px;
+          height: 6px;
+          background: #10b981;
+          border-radius: 50%;
+          box-shadow: 0 0 8px #10b981;
+          animation: pulse 2s infinite;
+        }
+
+        .expertise-row {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1rem;
+        }
+
+        .expertise-card {
+          padding: 1rem;
+          border-radius: var(--border-radius);
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          transition: transform var(--transition-normal);
+        }
+
+        .expertise-card:hover {
+          transform: translateY(-3px);
+        }
+
+        .expertise-icon {
+          font-size: 1.25rem;
+        }
+
+        .expertise-info h5 {
+          font-size: 0.85rem;
+          font-weight: 700;
+          margin-bottom: 0.1rem;
+        }
+
+        .expertise-info p {
+          font-size: 0.75rem;
+          color: var(--text-muted);
+          margin: 0;
+        }
+
+        @keyframes float {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-12px); }
+        }
+
+        @keyframes pulse {
+          0% { transform: scale(1); opacity: 1; }
+          50% { transform: scale(1.4); opacity: 0.5; }
+          100% { transform: scale(1); opacity: 1; }
+        }
+
+        @media (max-width: 1200px) {
+          .about-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+          }
+          .about-visual {
+            order: -1;
+          }
+          .illustration-container {
+            max-width: 180px;
+          }
+          .expertise-row {
+            grid-template-columns: 1fr;
+          }
+        }
+      `})]}),ye=({title:e,skills:t,className:n,delay:r=`0.2s`})=>(0,k.jsxs)(`div`,{className:`bento-item ${n} reveal`,style:{transitionDelay:r},children:[(0,k.jsx)(`h3`,{className:`skill-box-title text-gradient`,children:e}),(0,k.jsx)(`div`,{className:`skills-content`,children:(0,k.jsx)(`div`,{className:`skills-list`,children:t.map((e,t)=>(0,k.jsxs)(`div`,{className:`skill-item`,children:[(0,k.jsxs)(`div`,{className:`skill-info`,children:[(0,k.jsx)(`span`,{className:`skill-name`,children:e.name}),(0,k.jsxs)(`span`,{className:`skill-percentage`,children:[e.level,`%`]})]}),(0,k.jsx)(`div`,{className:`skill-bar-bg`,children:(0,k.jsx)(`div`,{className:`skill-bar-fill`,style:{width:`${e.level}%`}})})]},t))})}),(0,k.jsx)(`style`,{children:`
+        .skill-box-title {
+          margin-bottom: 1.5rem;
+          font-size: 1.25rem;
+          font-weight: 700;
+        }
+
         .skills-content {
           height: 100%;
           display: flex;
           flex-direction: column;
           overflow-y: auto;
-          padding-right: 1rem;
-        }
-
-        .skills-grid {
-          display: flex;
-          flex-direction: column;
-          gap: 2rem;
-        }
-
-        .skill-category {
-          margin-bottom: 1rem;
-        }
-
-        .category-title {
-          margin-bottom: 1.5rem;
-          font-size: 1.25rem;
+          padding-right: 0.5rem;
         }
 
         .skill-item {
-          margin-bottom: 1.5rem;
+          margin-bottom: 1.25rem;
         }
 
         .skill-item:last-child {
@@ -419,8 +549,9 @@ Error generating stack: `+e.message+`
         .skill-info {
           display: flex;
           justify-content: space-between;
-          margin-bottom: 0.5rem;
+          margin-bottom: 0.4rem;
           font-weight: 500;
+          font-size: 0.9rem;
         }
 
         .skill-percentage {
@@ -429,7 +560,7 @@ Error generating stack: `+e.message+`
 
         .skill-bar-bg {
           width: 100%;
-          height: 8px;
+          height: 6px;
           background: var(--bg-primary);
           border-radius: var(--border-radius-full);
           overflow: hidden;
@@ -456,6 +587,18 @@ Error generating stack: `+e.message+`
         @keyframes shimmer {
           0% { transform: translateX(-100%); }
           100% { transform: translateX(100%); }
+        }
+
+        /* Custom scrollbar for skills list */
+        .skills-content::-webkit-scrollbar {
+          width: 4px;
+        }
+        .skills-content::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        .skills-content::-webkit-scrollbar-thumb {
+          background: var(--border-color);
+          border-radius: 10px;
         }
       `})]}),be=({projectId:e,onClose:t})=>{let n={"case-study-1":{title:`Daily Drive`,subtitle:`Carpooling Web Application`,techStack:[`React`,`Node.js`,`Express.js`,`MongoDB`],duration:`3 months`,image:`/Portfolio/dd.png`,sections:[{heading:`Problem Statement`,content:`Urban commuters face rising transportation costs and traffic congestion. There was a need for a reliable, user-friendly platform that connects drivers and passengers for cost-effective shared rides while maintaining security and real-time updates.`},{heading:`Solution`,content:`Daily Drive is a full-stack MERN application that enables seamless ride-sharing. The platform allows users to create rides, search for available options, and book seats with secure authentication. Real-time updates keep users informed about ride availability and driver details.`},{heading:`Technical Implementation`,content:[`Frontend: Built with React for dynamic UI, featuring real-time ride updates and smooth user experience`,`Backend: Node.js and Express.js RESTful API handling ride management, user authentication, and booking logic`,`Database: MongoDB for flexible schema to store user profiles, rides, and booking information`,`Authentication: JWT-based secure user authentication and authorization`,`Real-time Features: Socket.io integration for live ride availability updates`]},{heading:`Key Features`,content:[`User Registration & Authentication with secure password hashing`,`Create and Publish Rides with customizable routes and schedules`,`Search & Filter Rides by date, destination, and price`,`Real-time Booking System with seat availability`,`User Ratings & Reviews for trust building`,`Payment Integration for secure transactions`,`Admin Dashboard for platform management`]},{heading:`Challenges & Solutions`,content:[`Challenge: Managing real-time data consistency`,`Solution: Implemented efficient database indexing and Socket.io for instant updates`,``,`Challenge: Ensuring user security and trust`,`Solution: JWT authentication, encrypted passwords, and user verification system`,``,`Challenge: Scalability for growing user base`,`Solution: Modular architecture and optimized database queries`]},{heading:`Results & Impact`,content:[`Successfully deployed and accessible to users`,`Handles real-time ride matching with 99% uptime`,`Supports concurrent users with optimized performance`,`Positive user feedback on UI/UX and platform reliability`,`Potential to reduce carbon footprint and traffic congestion`]},{heading:`Lessons Learned`,content:[`Importance of real-time features in user engagement`,`Scalability must be considered from the architecture phase`,`User trust is built through transparent communication and secure practices`,`Effective error handling improves user experience significantly`]}]},"case-study-2":{title:`Cinex`,subtitle:`Ride Booking Platform with Movie Theater UX`,techStack:[`Angular`,`CSS`,`Express.js`,`Node.js`,`MongoDB`],duration:`2.5 months`,image:`/Portfolio/cc.png`,sections:[{heading:`Problem Statement`,content:`While Daily Drive solved the problem, the goal was to explore different frontend frameworks and apply familiar UX patterns. The challenge was to redesign the ride-booking experience similar to movie ticketing systems, where users intuitively understand the booking flow.`},{heading:`Solution`,content:`Cinex applies the movie theater seat selection paradigm to ride-sharing. Users browse available rides, visualize available seats, and book trips using an interactive interface. This familiar pattern reduces cognitive load and increases booking confidence.`},{heading:`Technical Implementation`,content:[`Frontend: Angular framework for structured, component-based architecture`,`UI Design: Interactive seat map similar to movie booking systems`,`Styling: Custom CSS for responsive and visually appealing interface`,`Backend: Shared Node.js/Express.js API with real-time seat availability`,`Database: MongoDB for consistent data management across projects`,`State Management: Angular services for efficient component communication`]},{heading:`Key Features`,content:[`Interactive Seat Selection with visual feedback`,`Real-time Availability showing live seat status`,`Smooth Booking Flow mimicking movie ticket reservations`,`Journey Details with estimated travel time and cost`,`Driver Information & Verification`,`Booking History & Past Rides`,`Integrated Payment Gateway`]},{heading:`Challenges & Solutions`,content:[`Challenge: Implementing interactive seat visualization`,`Solution: SVG-based seat maps with real-time updates`,``,`Challenge: Synchronizing seat availability across concurrent users`,`Solution: WebSocket implementation for instant seat status updates`,``,`Challenge: Framework transition from React to Angular`,`Solution: Leveraged Angular CLI and studied component lifecycle thoroughly`]},{heading:`Results & Impact`,content:[`Demonstrated proficiency with Angular framework`,`User test feedback showed 40% faster booking completion vs. traditional forms`,`Reduced booking abandonment through familiar UX patterns`,`Successfully deployed with similar backend infrastructure to Daily Drive`,`Proved adaptability across different frontend frameworks`]},{heading:`Lessons Learned`,content:[`UX patterns from one domain can successfully transfer to another`,`Angular provides excellent structure for larger applications`,`Reusable backend APIs reduce development time and improve consistency`,`Visual feedback is crucial for user confidence in booking systems`]}]},"case-study-3":{title:`Apple-store`,subtitle:`Premium E-commerce Inspired Ride Booking`,techStack:[`PHP`,`CSS`,`JavaScript`,`MySQL`],duration:`2 months`,image:`/Portfolio/apple.jpg`,sections:[{heading:`Problem Statement`,content:`After exploring modern MERN and MEAN stacks, the goal was to work with traditional backend technologies while maintaining a premium user experience. The challenge was to create a ride-booking platform inspired by Apple's minimalist, elegant design philosophy using PHP and MySQL.`},{heading:`Solution`,content:`Apple-store replicates the clean, intuitive interface of the Apple Store for ride-booking. Users navigate through a seamless experience with minimal friction, clear call-to-actions, and elegant transitions. This approach proves that premium UX doesn't depend on modern frameworks alone.`},{heading:`Technical Implementation`,content:[`Backend: PHP with modular architecture for maintainability`,`Database: MySQL with optimized queries for performance`,`Frontend: HTML5 and CSS3 for semantic markup and responsive design`,`Interactivity: Vanilla JavaScript for smooth interactions without heavy frameworks`,`Architecture: MVC pattern for clear separation of concerns`,`Security: Input validation, SQL prepared statements, and CSRF protection`]},{heading:`Key Features`,content:[`Minimalist Design inspired by Apple's design language`,`Responsive Layout that works seamlessly on all devices`,`Smooth Ride Browsing with filtering capabilities`,`Simple Seat Selection interface`,`One-click Booking with minimal form fields`,`Ride History & Favorites`,`Secure User Authentication`]},{heading:`Challenges & Solutions`,content:[`Challenge: Achieving modern UX with traditional technologies`,`Solution: Focused on design fundamentals and CSS mastery`,``,`Challenge: Performance optimization with server-side rendering`,`Solution: Implemented caching strategies and database query optimization`,``,`Challenge: Maintaining consistency without modern state management`,`Solution: Well-structured PHP sessions and careful DOM manipulation`]},{heading:`Results & Impact`,content:[`Demonstrated versatility across different technology stacks`,`Proved that excellent UX is achievable with traditional technologies`,`Fast page load times through optimized PHP and MySQL queries`,`User feedback praised the clean, uncluttered interface`,`Successfully deployed with 95% mobile responsiveness score`]},{heading:`Lessons Learned`,content:[`Modern frameworks aren't always necessary for great UX`,`Design fundamentals are more important than technology choices`,`Traditional technologies can be highly optimized for performance`,`Understanding multiple tech stacks increases developer versatility`,`Minimalism and simplicity create stronger user engagement`]}]}}[e];return n?(0,k.jsxs)(`div`,{className:`case-study-overlay`,children:[(0,k.jsxs)(`div`,{className:`case-study-modal`,children:[(0,k.jsx)(`button`,{className:`case-study-close`,onClick:t,children:(0,k.jsx)(ue,{size:24})}),(0,k.jsx)(`div`,{className:`case-study-header`,children:(0,k.jsx)(`img`,{src:n.image,alt:n.title,className:`case-study-image`})}),(0,k.jsxs)(`div`,{className:`case-study-content`,children:[(0,k.jsx)(`h1`,{className:`case-study-title`,children:n.title}),(0,k.jsx)(`p`,{className:`case-study-subtitle`,children:n.subtitle}),(0,k.jsxs)(`div`,{className:`case-study-meta`,children:[(0,k.jsxs)(`div`,{className:`meta-item`,children:[(0,k.jsx)(`strong`,{children:`Duration:`}),` `,n.duration]}),(0,k.jsxs)(`div`,{className:`meta-item`,children:[(0,k.jsx)(`strong`,{children:`Tech Stack:`}),(0,k.jsx)(`div`,{className:`meta-tech-stack`,children:n.techStack.map((e,t)=>(0,k.jsx)(`span`,{className:`meta-tech-tag`,children:e},t))})]})]}),(0,k.jsx)(`div`,{className:`case-study-sections`,children:n.sections.map((e,t)=>(0,k.jsxs)(`section`,{className:`case-study-section`,children:[(0,k.jsx)(`h2`,{className:`section-heading`,children:e.heading}),Array.isArray(e.content)?(0,k.jsx)(`ul`,{className:`section-list`,children:e.content.map((e,t)=>e?(0,k.jsx)(`li`,{children:e},t):(0,k.jsx)(`li`,{style:{height:`0.5rem`}},t))}):(0,k.jsx)(`p`,{className:`section-text`,children:e.content})]},t))})]})]}),(0,k.jsx)(`style`,{children:`
         .case-study-overlay {
@@ -989,4 +1132,4 @@ Error generating stack: `+e.message+`
             text-align: center;
           }
         }
-      `})]})};function Pe(){return(0,_.useEffect)(()=>{let e=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&e.target.classList.add(`active`)})},{threshold:.1,rootMargin:`0px 0px -50px 0px`});return setTimeout(()=>{document.querySelectorAll(`.reveal`).forEach(t=>e.observe(t))},100),()=>e.disconnect()},[]),(0,k.jsxs)(k.Fragment,{children:[(0,k.jsx)(ge,{}),(0,k.jsx)(`div`,{className:`bento-wrapper`,children:(0,k.jsxs)(`main`,{className:`bento-grid`,children:[(0,k.jsx)(_e,{}),(0,k.jsx)(ve,{}),(0,k.jsx)(ye,{}),(0,k.jsx)(xe,{}),(0,k.jsx)(Se,{})]})}),(0,k.jsx)(Ne,{})]})}(0,v.createRoot)(document.getElementById(`root`)).render((0,k.jsx)(_.StrictMode,{children:(0,k.jsx)(Pe,{})}));
+      `})]})},Pe=[{title:`Frontend`,skills:[{name:`React`,level:90},{name:`Angular`,level:75},{name:`Next.js`,level:80},{name:`JavaScript (ES6+)`,level:95},{name:`TypeScript`,level:70},{name:`HTML5/CSS3`,level:95},{name:`Tailwind CSS`,level:90}]},{title:`Backend`,skills:[{name:`Node.js`,level:85},{name:`Express`,level:80},{name:`PHP`,level:65},{name:`Firebase`,level:75},{name:`RESTful APIs`,level:90}]},{title:`Database & Tools`,skills:[{name:`MongoDB`,level:90},{name:`MySQL`,level:85},{name:`PostgreSQL`,level:70},{name:`Git & GitHub`,level:90},{name:`Docker`,level:65},{name:`Vercel`,level:80},{name:`Postman`,level:90}]}];function Fe(){return(0,_.useEffect)(()=>{let e=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&e.target.classList.add(`active`)})},{threshold:.1,rootMargin:`0px 0px -50px 0px`});return setTimeout(()=>{document.querySelectorAll(`.reveal`).forEach(t=>e.observe(t))},100),()=>e.disconnect()},[]),(0,k.jsxs)(k.Fragment,{children:[(0,k.jsx)(ge,{}),(0,k.jsx)(`div`,{className:`bento-wrapper`,children:(0,k.jsxs)(`main`,{className:`bento-grid`,children:[(0,k.jsx)(_e,{}),(0,k.jsx)(ve,{}),(0,k.jsx)(ye,{title:`Frontend`,skills:Pe[0].skills,className:`col-span-1 row-span-1`,delay:`0.2s`}),(0,k.jsx)(ye,{title:`Backend`,skills:Pe[1].skills,className:`col-span-1 row-span-1`,delay:`0.3s`}),(0,k.jsx)(ye,{title:`Database & Tools`,skills:Pe[2].skills,className:`col-span-2 row-span-1`,delay:`0.4s`}),(0,k.jsx)(xe,{}),(0,k.jsx)(Se,{})]})}),(0,k.jsx)(Ne,{})]})}(0,v.createRoot)(document.getElementById(`root`)).render((0,k.jsx)(_.StrictMode,{children:(0,k.jsx)(Fe,{})}));
